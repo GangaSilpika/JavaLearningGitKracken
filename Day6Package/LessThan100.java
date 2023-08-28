@@ -10,8 +10,20 @@ public class LessThan100 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a value less than 100");
         m = sc.nextInt();
+       // if(m<0) {
+        //    System.out.println("Please enter positive numbers only");
+         //   m = sc.nextInt();
+        //}// Can use WHILE loop for optimizing the coding
+        while(m<0){
+            System.out.println("Please enter positive numbers only");
+            m = sc.nextInt();
+        }
         System.out.println("Enter another value less than 100");
         n = sc.nextInt();
+        if(n<0) {
+            System.out.println("Please enter positive numbers only");
+            n = sc.nextInt();
+        }
         lessthan100(m, n);
         }
 

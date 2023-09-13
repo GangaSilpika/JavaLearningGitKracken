@@ -7,7 +7,7 @@ public class SwitchCase {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the temperature");
         int temp = sc.nextInt();
-        if (temp > 14 && temp < 53) {
+        if (temp < 53) {
             System.out.println("The temperature is cold");
         }
             else if(temp > 52 && temp < 86)
